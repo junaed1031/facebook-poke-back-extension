@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Facebook Auto Poke Back",
+    "version": "1.0",
+    "description": "Automatically pokes back anyone on Facebook Pokes page.",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/pokes*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
